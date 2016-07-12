@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link type="text/css" rel="stylesheet" href="stylesheet.css"/>
+<title>Count Calcula's Calculator</title>
+</head>
+<body>
+    <div class="header">
+    	<h1>Count Calcula's Calculator</h1>
+    </div>
+    <div id="calculator">
+	<!-- Screen and clear key -->
+	<div class="top">
+		<span class="clear" onclick="displayClear()">C</span>
+		<div id="screen">0</div>
+	</div>
+	
+	<div class="keys">
+		<!-- operators and other keys -->
+		<span onclick="addDigit(7)">7</span>
+		<span onclick="addDigit(8)">8</span>
+		<span onclick="addDigit(9)">9</span>
+		<span class="operator" onclick="createOperation(add)">+</span>
+		<span onclick="addDigit(4)">4</span>
+		<span onclick="addDigit(5)">5</span>
+		<span onclick="addDigit(6)">6</span>
+		<span class="operator" onclick="createOperation(subtract)">-</span>
+		<span onclick="addDigit(1)">1</span>
+		<span onclick="addDigit(2)">2</span>
+		<span onclick="addDigit(3)">3</span>
+		<span class="operator" onclick="createOperation(divide)">/</span>
+		<span onclick="addDigit(0)">0</span>
+		<span id="period">.</span>
+		<span class="eval" onclick="displayEquals()">=</span>
+		<span class="operator" onclick="createOperation(multiply)">x</span>
+	</div>
+</div>
+
+	<script type="text/javascript" src="script.js"></script>
+    </div>
+</body>
+
+</body>	
+</html>
